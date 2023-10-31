@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'FTypePopAlert_Example' do
+  pod 'FTypePopAlert', :path => '../'
+
+  target 'FTypePopAlert_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
