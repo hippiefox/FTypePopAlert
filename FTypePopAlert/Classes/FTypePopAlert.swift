@@ -48,7 +48,7 @@ open class FTypePopAlert: UIViewController {
     }
 }
 
-// MARK: - - Configure UI
+// MARK: - Configure UI
 
 extension FTypePopAlert {
     private func configureUI() {
@@ -63,7 +63,7 @@ extension FTypePopAlert {
     }
 }
 
-// MARK: gesture
+// MARK: - UIGestureRecognizerDelegate
 
 extension FTypePopAlert: UIGestureRecognizerDelegate {
     @objc open func tapSelf() {
@@ -78,6 +78,8 @@ extension FTypePopAlert: UIGestureRecognizerDelegate {
     }
 }
 
+// MARK: - UIViewControllerTransitioningDelegate
+
 extension FTypePopAlert: UIViewControllerTransitioningDelegate {
     open func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         self
@@ -87,6 +89,8 @@ extension FTypePopAlert: UIViewControllerTransitioningDelegate {
         self
     }
 }
+
+// MARK: - UIViewControllerAnimatedTransitioning
 
 extension FTypePopAlert: UIViewControllerAnimatedTransitioning {
     open func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {

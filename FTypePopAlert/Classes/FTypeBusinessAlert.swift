@@ -11,15 +11,15 @@ import UIKit
 import WebKit
 
 public struct FTypeBusinessAlertConfig {
-    static let contentSizeKP = "scrollView.contentSize"
+    public static let contentSizeKP = "scrollView.contentSize"
     /// 按钮的高度
-    static var buttonHeight: CGFloat = 49
+    public static var buttonHeight: CGFloat = 49
     /// 视图弹窗的宽度
-    static var containerWidth: CGFloat = 320
+    public static var containerWidth: CGFloat = 320
     /// 通常为背景的高度
-    static var basicHeight: CGFloat = 140
+    public static var basicHeight: CGFloat = 140
     /// 分割线的颜色
-    static var buttonSeperatorColor: UIColor = UIColor.lightGray.withAlphaComponent(0.2)
+    public static var buttonSeperatorColor: UIColor = UIColor.lightGray.withAlphaComponent(0.2)
 }
 
 open class FTypeBusinessAlert: FTypePopAlert {
